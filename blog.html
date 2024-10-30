@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sutil y Fino</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para la página de blog/noticias */
+        #blog {
+            width: 85%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #blog h2 {
+            text-align: center;
+            color: #222;
+            font-family: 'Georgia', serif;
+            font-size: 2em;
+            margin-bottom: 1.5em;
+        }
+
+        .entry {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .entry:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .entry img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .entry h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .entry p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Formulario de entrada */
+        #newEntryForm {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f0f2;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #newEntryForm input, #newEntryForm textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        #newEntryForm button {
+            padding: 12px 20px;
+            background-color: #1a7459;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #newEntryForm button:hover {
+            background-color: #146048;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .entry {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .entry img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/sutil_y_fino.jpeg" alt="Logo de Sutil y Fino" class="logo">
+            <h1 class="titulo">Sutil y Fino</h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="acerca.html">Acerca de Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="blog">
+        <h2>Blog y Noticias</h2>
+        <div id="entries">
+            <div class="entry">
+                <img src="lenc.webp" alt="Imagen de noticia 1">
+                <div class="entry-content">
+                    <h3>"Tendencias en Lencería para la Temporada 2024: Estilos, Colores y Más"</h3>
+                    <p>La moda en lencería evoluciona constantemente, y el 2024 no es la excepción. Esta temporada, veremos un enfoque en diseños minimalistas que combinan sensualidad y elegancia. Colores como el lavanda, el verde musgo, y tonos tierra se perfilan como favoritos. Además, los tejidos sostenibles están marcando la diferencia, siendo cada vez más demandados. Descubre cómo estas nuevas tendencias pueden integrarse en tu guardarropa, y cómo elegir las prendas perfectas para realzar tu estilo personal.</p>
+                </div>
+            </div>
+            <div class="entry">
+                <img src="img/slip_masculino.jpg" alt="Imagen de noticia 2">
+                <div class="entry-content">
+                    <h3>"Guía para Elegir la Ropa Interior Perfecta Según Tu Actividad y Estilo de Vida"</h3>
+                    <p>La ropa interior no solo es una prenda esencial, sino que también influye en nuestra comodidad y confianza a lo largo del día. Este artículo te ayudará a elegir las prendas ideales para distintas situaciones. Para días largos y ocupados, la clave es optar por materiales transpirables y cortes cómodos, como los boxers de algodón o las bragas de microfibra. Para ocasiones especiales, las piezas con encaje y detalles finos añaden un toque de sofisticación. Además, exploramos las opciones más versátiles y estilos adaptables para quienes buscan comodidad sin sacrificar el estilo.</p>
+                </div>
+            </div>
+            <div class="entry">
+                <img src="ropa.jpg" alt="Imagen de noticia 3">
+                <div class="entry-content">
+                    <h3>"Beneficios de Elegir Ropa Interior de Materiales Orgánicos: Comodidad y Cuidado del Planeta"</h3>
+                    <p>En los últimos años, ha crecido la demanda de ropa interior fabricada con materiales orgánicos, y no es solo una tendencia: los beneficios son numerosos. Las prendas elaboradas con algodón orgánico o bambú son mucho más suaves para la piel, ayudan a reducir el riesgo de alergias y son altamente transpirables, lo cual es ideal para mantener la frescura. Además, estos materiales se obtienen de forma más sostenible, ayudando a disminuir el impacto ambiental. Conoce las ventajas de cambiar a opciones orgánicas y cómo pueden marcar la diferencia tanto en tu comodidad diaria como en el cuidado del medio ambiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
